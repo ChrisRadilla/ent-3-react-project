@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bungee+Shade&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Diplomata&family=Kalam:wght@300;400;700&family=Kumar+One+Outline&family=Martian+Mono:wght@100..800&family=Pacifico&family=Reenie+Beanie&family=Rubik+Scribble&family=Tapestry&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bruno+Ace&family=Bungee+Shade&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Diplomata&family=Kalam:wght@300;400;700&family=Kumar+One+Outline&family=Martian+Mono:wght@100..800&family=Mynerve&family=Pacifico&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bruno+Ace&family=Bungee+Shade&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Diplomata&family=Kalam:wght@300;400;700&family=Kumar+One+Outline&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Martian+Mono:wght@100..800&family=Mynerve&family=Pacifico&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bruno+Ace&family=Bungee+Shade&family=Calligraffitti&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Diplomata&family=Kalam:wght@300;400;700&family=Kumar+One+Outline&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Martian+Mono:wght@100..800&family=Mynerve&family=Pacifico&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bruno+Ace&family=Bungee+Shade&family=Calligraffitti&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Diplomata&family=Kalam:wght@300;400;700&family=Kumar+One+Outline&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Martian+Mono:wght@100..800&family=Mynerve&family=Pacifico&family=Reenie+Beanie&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+
+/*===================*/
+/*      Reset        */
+/*=================*/
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: aqua;
+  font-family: "Mynerve", cursive;
+
+}
+img{
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+input,button{
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+button{
+  border: none;
+  padding: 0 15px;
+}
+
+ul{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+/*===================*/
+/*       App        */
+/*=================*/
+
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+  
+
+}
+.loading_gif {
+  width: 100%; /* Set the container width to 100% to fill the entire screen */
+  height: 100vh; /* Set the container height to 100% of the viewport height */
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a21875f1-2ef0-412b-8509-fe8928c12cec/dfdqiz6-878e728a-f93a-4664-ab31-0ceb9d70f5b2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyMTg3NWYxLTJlZjAtNDEyYi04NTA5LWZlODkyOGMxMmNlY1wvZGZkcWl6Ni04NzhlNzI4YS1mOTNhLTQ2NjQtYWIzMS0wY2ViOWQ3MGY1YjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6cgtV7fh8VZv640Ri9amrqUKEQ6saTENlDhR-qTW1EI);
+  background-size: contain; /* Ensure the background image fits within the container */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
+  color: aqua;
+  font-size: 50px;
+  text-align: left;
+}
+
+.app_container{
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.app_form{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app_btn{
+  background-color: greenyellow;  
+  color: black;
+  border-radius: 0 0 5px 5px;
+  transition: color .3s;
+}
+.app_btn:hover{
+  filter: brightness(1.1);
+  color: aqua;
+  background-color: black;
+  border: aqua solid 1px;
+}
+.app_input{
+  margin-top: 10px;
+  border-radius: 5px 0 0 5px;
+}
+.error-container {
+  position: relative;
+
+}
+
+.incorrect_image {
+  position: absolute;
+  top: 100%;
+  width: 110%;
+  height: 470px; /* Adjust height as needed */
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjMzMjljNDI0ZHFpaW5pczgzNTIwcmppNjR4YmJ0ZDVtcDE2d3ZpdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/6Y6Q14uNgJzV1ev2rh/giphy.gif);
+  background-repeat: no-repeat;
+ margin-bottom: 0;
+
+}
+/*https://mir-s3-cdn-cf.behance.net/project_modules/disp/7d8cda55883023.5996f8afa35b2.gif  --------rick head*/
+/*https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/19643055883023.5996f8afa3a8f.gif  -----the logo */
+.empty-search-gif{
+width: 180px; 
+  height: 500%;
+  font-family: "Calligraffitti", cursive;
+
+}
+h3{
+  font-family: "Roboto Mono", monospace;
+}
+h5{
+  font-size: 20px;
+}
+.footer{
+  font-size: 20px;
+  font-family: "Lobster Two", sans-serif;
+ margin-top: 30%;
+}
+

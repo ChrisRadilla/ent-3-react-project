@@ -1,0 +1,68 @@
+
+.resident{
+    background-color: #072226;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 20px -6px aqua;
+    margin-bottom: 20px;
+}
+.resident:hover{
+    transform: scale(1.05);
+}
+.resident_img{
+    position: relative;
+
+}
+.resident_status{
+    position: absolute;
+    top: 10%;
+    background-color: #072226;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    gap: 10px;
+}
+.Alive {
+    background-color: #039E04;
+}
+
+.Dead {
+    background-color: red;
+}
+
+.unknown {
+    background-color: gray;
+}
+.resident_circle{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 15px;
+}
+
+.resident_line{
+    border: 1px solid #7777;
+    width: 80%;
+    margin: 10px 0;
+
+}
+.resident_list{
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+.resident_item{
+    display: flex;
+    flex-direction: column;
+   
+}
+.resident_item span:first-child{
+    padding-left: 20px;
+    color: greenyellow;
+}
+
+
