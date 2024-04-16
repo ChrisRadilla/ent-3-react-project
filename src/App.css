@@ -29,6 +29,12 @@ img{
   object-fit: contain;
 }
 
+
+
+/*===================*/
+/*     Buttons        */
+/*=================*/
+
 input,button{
   display: inline-block;
   cursor: pointer;
@@ -51,6 +57,39 @@ a{
   color: dodgerblue;
 }
 
+.navigation-buttons{
+margin-bottom: 20px;
+margin-top: -20px;
+
+}
+.Pre-Btn{
+background-color: greenyellow;
+color: black;
+border: black solid 1px;
+border-radius: 5px 0 0 5px;
+}
+.Next-Btn{
+  background-color: greenyellow;
+  color: black;
+  border: black solid 1px;
+  border-radius: 0 5px 5px 0;
+  transition: color .3s;
+}
+.Next-Btn:hover{
+  filter: brightness(1.1);
+  color: aqua;
+  background-color: black;
+  border: aqua solid 1px;
+}
+.Pre-Btn:hover{
+  filter: brightness(1.1);
+  color: aqua;
+  background-color: black;
+  border: aqua solid 1px;
+}
+.bottom-Btn{
+margin-top: 200%;
+}
 /*===================*/
 /*       App        */
 /*=================*/
@@ -62,18 +101,7 @@ a{
   background-color: black;
   min-height: 100vh;
   
-
-}
-.loading_gif {
-  width: 100%; /* Set the container width to 100% to fill the entire screen */
-  height: 100vh; /* Set the container height to 100% of the viewport height */
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a21875f1-2ef0-412b-8509-fe8928c12cec/dfdqiz6-878e728a-f93a-4664-ab31-0ceb9d70f5b2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyMTg3NWYxLTJlZjAtNDEyYi04NTA5LWZlODkyOGMxMmNlY1wvZGZkcWl6Ni04NzhlNzI4YS1mOTNhLTQ2NjQtYWIzMS0wY2ViOWQ3MGY1YjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6cgtV7fh8VZv640Ri9amrqUKEQ6saTENlDhR-qTW1EI);
-  background-size: contain; /* Ensure the background image fits within the container */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-position: center; /* Center the background image */
-  color: aqua;
-  font-size: 50px;
-  text-align: left;
+  
 }
 
 .app_container{
@@ -105,11 +133,15 @@ a{
   margin-top: 10px;
   border-radius: 5px 0 0 5px;
 }
+
+/*===================*/
+/*       gif        */
+/*=================*/
+
 .error-container {
   position: relative;
-
+  
 }
-
 .incorrect_image {
   position: absolute;
   top: 100%;
@@ -121,15 +153,26 @@ a{
   background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjMzMjljNDI0ZHFpaW5pczgzNTIwcmppNjR4YmJ0ZDVtcDE2d3ZpdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/6Y6Q14uNgJzV1ev2rh/giphy.gif);
   background-repeat: no-repeat;
  margin-bottom: 0;
-
+ 
 }
 /*https://mir-s3-cdn-cf.behance.net/project_modules/disp/7d8cda55883023.5996f8afa35b2.gif  --------rick head*/
 /*https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/19643055883023.5996f8afa3a8f.gif  -----the logo */
+.loading_gif {
+  width: 100%; /* Set the container width to 100% to fill the entire screen */
+  height: 100vh; /* Set the container height to 100% of the viewport height */
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a21875f1-2ef0-412b-8509-fe8928c12cec/dfdqiz6-878e728a-f93a-4664-ab31-0ceb9d70f5b2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyMTg3NWYxLTJlZjAtNDEyYi04NTA5LWZlODkyOGMxMmNlY1wvZGZkcWl6Ni04NzhlNzI4YS1mOTNhLTQ2NjQtYWIzMS0wY2ViOWQ3MGY1YjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6cgtV7fh8VZv640Ri9amrqUKEQ6saTENlDhR-qTW1EI);
+  background-size: contain; /* Ensure the background image fits within the container */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
+  color: aqua;
+  font-size: 50px;
+  text-align: left;
+}
 .empty-search-gif{
-width: 180px; 
+  width: 180px; 
   height: 500%;
   font-family: "Calligraffitti", cursive;
-
+  
 }
 h3{
   font-family: "Roboto Mono", monospace;
@@ -142,4 +185,3 @@ h5{
   font-family: "Lobster Two", sans-serif;
  margin-top: 30%;
 }
-

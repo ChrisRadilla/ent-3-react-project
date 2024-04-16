@@ -14,6 +14,6 @@ const LocationData = ({ location }) => {
       </section>
     </div>
   );
-};
+}; 
 
 export default LocationData;
